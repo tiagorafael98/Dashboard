@@ -13,17 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/users/{id}', function ($id = null) {
-    return view('users', ['users' => $id]);
-});
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\TripController;
+use App\Http\Controllers\MarcasController;
+use App\Http\Controllers\ModelosController;
 
-Route::get('/cars', function () {
+Route::get('/', [EventController::class, 'index']);
+Route::get('/users/list', [EventController::class, 'list']);
 
-    $procurar = request('search');
 
-    return view('cars', ['procurar' => $procurar]);
-});
+// Rota para users
+Route::get('/users', [UserController::class, 'index']);
+
+// Rota para cars
+Route::get('/cars', [CarController::class, 'index']);
+
+// Rota para viagens
+Route::get('/trip', [TripController::class, 'index']);
+
+// Rota para marcas
+Route::get('/marcas', [MarcasController::class, 'index']);
+
+// Rota para modelos
+Route::get('/modelos', [ModelosController::class, 'index']);

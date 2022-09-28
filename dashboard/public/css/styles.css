@@ -1,3 +1,17 @@
 * {
     font-family: 'Roboto';
 }
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.table thead tr {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+
+}

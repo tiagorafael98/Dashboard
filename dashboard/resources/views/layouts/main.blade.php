@@ -26,10 +26,19 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Login</a>
+                            <a href="/users" class="nav-link">Listagem de Utilizadores</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">register</a>
+                            <a href="/cars" class="nav-link">Listagem de Carros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/trip" class="nav-link">Listagem de Viagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/marcas" class="nav-link">Listagem de Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/modelos" class="nav-link">Listagem de Modelos</a>
                         </li>
                     </ul>
                 </div>

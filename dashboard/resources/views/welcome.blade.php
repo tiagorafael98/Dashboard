@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'Dashboard')
 
-        <link rel="stylesheet" href="/css/styles.css">
-        <img src="/img/GreenCar.jpeg" alt=""> 
-        <script src="/js/scripts.js"></script>
+@section('content')
 
-    </head>
-    <body>
-        <h1>ola</h1>
+     <h1>ola</h1>
+
+@endsection
         
-    </body>
-</html>

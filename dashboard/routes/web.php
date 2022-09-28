@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users/{id}', function ($id = null) {
+    return view('users', ['users' => $id]);
+});
+
+Route::get('/cars', function () {
+
+    $procurar = request('search');
+
+    return view('cars', ['procurar' => $procurar]);
+});
